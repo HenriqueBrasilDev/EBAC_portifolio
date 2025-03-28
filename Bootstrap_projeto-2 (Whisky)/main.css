@@ -1,0 +1,38 @@
+body{
+    font-family: Roboto;
+}
+
+.navbar{
+    background-color: rgb(156, 92, 63);
+}
+
+.nav .nav-link.active{
+    background-color: white;
+    color: rgb(156, 92, 63);
+}
+
+.nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover{
+    color: white;
+}
+
+.navbar-brand{
+    font-family: Pacifico, cursive;
+}
+
+.navbar-toggler{
+    background-color: white;
+}
+
+.section-title{
+    font-family: Pacifico, cursive;
+}
+
+.section-title span{
+    color: rgb(156, 92, 63);
+}
+
+#sobre{
+    background-color: rgba(156, 93, 63, 0.192);
+}

@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+
+.container{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    position: relative;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    backdrop-filter: blur(15px);
+    box-shadow: 20px 20px 20px 2px #000000;
+    }
+
+header > .container{
+    align-items: center;
+    background-color: #68370d00;
+    width: 100%;
+    height: 90px;
+    padding: 0 10%;
+}
+
+
+header h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+header nav ul{
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav li{
+    display: inline;
+}
+
+header nav li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+    transform-origin: center;
+}
+
+header nav li a:hover{
+    text-shadow: 0px 5px 3px #000000;
+    font-size: 1.4em;
+}
+
+hr .hr{
+    margin: 10px 0;
+}
+
+section#sobre{
+    background-image: url("imgs/coffee1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#sobre .container{
+    padding-top: 111px;
+    position: relative;
+}
+
+.conteudo{
+    text-align: center;
+    background-image: url("imgs/coffee1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    border: solid 3px white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 0 50px 0;
+}
+
+.conteudo h2{
+    margin: 70px auto 70px auto;
+    font-family: 'Great Vibes', cursive;
+    font-size: 75px;
+    text-shadow: 0px 5px 3px #000000;
+}
+
+.conteudo p{
+    font-size: 30px;
+    color: #fcfcfc;
+    margin: 70px 15%;
+    text-shadow: 0px 0px 15px #000000;
+    
+
+}
+
+.conteudo > a{
+    width: 100%;
+}
+
+.conteudo > a img{
+    width: 50px;
+    margin: 70px auto 100px auto;
+
+}
+
+
+
+
+
+
+
+section .container-max{
+    padding-top: 75px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+}
+
+.container h3{
+    font-size: 35px;
+    font-weight: normal;
+    text-align: center;
+    margin: 30px 0;
+    text-shadow: 0px 10px 15px #000000;
+    
+}
+
+form input,
+textarea,
+button{
+    width: 350px;
+    display: block;
+    margin: 0 0 30px 0px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    box-shadow: 0px 10px 15px #000000;
+
+}
+
+textarea{
+    padding-top: 10px;
+    height: 200px;
+}
+
+button{
+    cursor: pointer;
+    background-image: linear-gradient( #bb5d0b, #2b2118);
+    color: white;
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+    border: none;
+}
+
+button:hover{
+    background-image: linear-gradient(#000000,  #bb5d0b);
+}
+
+
+.container-max ul{
+    margin-bottom: 25px;
+}
+
+.container-max ul li{
+    display: inline-block;
+}
+
+#contato .container-max p
+{
+    font-size: 20px;
+    position: relative;
+    top: -4px;
+}
+
+#contato .container-max a{
+    display: block;
+    padding: 5px 0px;
+    margin-right: 10px;
+    border-radius: 30px;
+    background-image: linear-gradient( #bb5d0b, #000000);
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#contato a:hover{
+    background-image: linear-gradient(#000000,  #bb5d0b);
+}
+
+#contato address{
+    font-size: 20px;
+    text-shadow: 0px 10px 15px #000000;
+    margin-top: 40px;
+
+}
+
+
+
+
+footer{
+    background-color: #000000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Queria deixar mais responsivo, mas, estou atrasado no curso*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

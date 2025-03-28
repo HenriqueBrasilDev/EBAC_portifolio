@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap?</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+
+    <style>
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            backdrop-filter: blur(10px);
+            box-shadow: -1px 5px 20px #000000;
+            text-shadow: 2px 3px 8px #000000;
+
+        }
+
+        .carousel {
+            top: -72px;
+        }
+
+        .nav-pills .nav-link.active{
+            color: #463266;
+            background-color: white;
+        }
+
+        .nav-link{
+            color: white;
+        }
+
+        .nav-link:hover{
+            color: #7b57b9;
+        }
+
+        .footer{
+            background-color: #463266;
+            text-shadow: 2px 5px 8px #000000;
+
+        }
+
+        @media only screen and (max-width: 600px) {
+            .carousel {
+                top: -60px;
+            }
+        }
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <header id="header">
+        <div class="navbar container text-white navbar-expand-lg">
+            <h1 style="cursor: pointer;"><a href="index.html" style="text-decoration: none; color: white;">Bootstrap?</a></h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a href="#sobre" class="nav-link active">História</a>
+                    </li>
+                    <li>
+                        <a href="#cards" class="nav-link">Curiosidades</a>
+                    </li>
+                    <li>
+                        <a href="#ded" class="nav-link">Download & Documentação</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="#header">
+        <section id="sobre">
+            <div id="carousel-ex" class="carousel slide p-0 p-sn-0 position-relative" data-bs-ride="carousel">
+                
+                <div class="carousel-inner ">
+                    <div data-bs-interval="3000" class=" carousel-item active">
+                        <img class="d-block w-100 p-0" src="img/wallpaper1.webp" alt="">
+                    </div>
+                    <div data-bs-interval="3000" class=" carousel-item">
+                        <img class="d-block w-100 p-0" src="img/git.png" alt="">
+                    </div>
+                    <div data-bs-interval="3000" class=" carousel-item">
+                        <img class="d-block w-100 p-0" src="img/wallpaper2.webp" alt="">
+                    </div>
+                </div>
+                
+
+                <div class="container">
+                    <button data-bs-target="#carousel-ex" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-ex" data-bs-slide="next" class="carousel-control-next" type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    
+    
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-ex" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carousel-ex" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-ex" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    
+        <section id="cards">
+            <div class="container">
+                <div class="grid mt-5">
+                    <div class="row d-flex jus">
+    
+                        <div class="col-sn-12 col-md-6 col-lg-4 text-center mb-5">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        Quem criou o bootstrap?
+                                    </div>
+                                </div>
+                                <div class="card-bory">
+                                    <img src="img/twiter.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="car-footer p-3">
+                                    Foi inicialmente desenvolvido por dois engenheiros do Twitter (Mark Otto e Jacob Thornton) para uso interno na empresa, com o nome de "Twitter Blueprint". 
+                                    Só mais tarde, ao perceberem seu potencial, é que ele foi liberado para o mundo como software de código aberto.
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-sn-12 col-md-6 col-lg-4 text-center mb-5">
+                            <div class="card ">
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        Vantagem inicial
+                                    </div>
+                                </div>
+                                <div class="card-bory">
+                                    <img src="img/bootstrap.png" class="w-100" alt="">
+                                </div>
+                                <div class="car-footer p-3">
+                                    O nome "Bootstrap" pode parecer aleatório, mas ele reflete a proposta do framework: 
+                                    dar aos desenvolvedores uma "vantagem inicial" (tradução literal de "bootstrap") em 
+                                    seus projetos, fornecendo uma base sólida para construir interfaces web.
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-sn-12 col-md-6 col-lg-4 text-center mb-5">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        Objetivos
+                                    </div>
+                                </div>
+                                <div class="card-bory">
+                                    <img src="img/objetivo.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="car-footer p-3">
+                                    O objetivo inicial do Bootstrap era padronizar o desenvolvimento interno do Twitter e eliminar inconsistências no design. 
+                                    Basicamente, ele nasceu da necessidade de tornar a vida dos desenvolvedores mais fácil.
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <footer id="ded" class="footer text-center text-white pt-5">
+            <h4>Documentação: <a class="text-white" href="https://getbootstrap.com.br/docs/4.1/getting-started/introduction/" target="_blank">https://getbootstrap.com.br/docs/4.1/getting-started/introduction/</a><br></h4>
+            <br>
+            <h4>Download: <a class="text-white" href="https://getbootstrap.com/docs/5.3/getting-started/introduction/#cdn-links" target="_blank">https://getbootstrap.com/docs/5.3/getting-started/introduction/#cdn-links</a></h4>
+            <div class="pt-5">
+                <p class="m-0 font-weight-bold">2024 © Henrique Brasil - Todos os direitos reservados</p>
+            </div>
+        </footer>
+    </div>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
