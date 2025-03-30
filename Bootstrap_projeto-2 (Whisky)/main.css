@@ -1,19 +1,26 @@
+:root{
+    --cor1: rgb(156, 92, 63);
+    --cor2: rgba(156, 93, 63, 0.192);
+    
+}
+
 body{
     font-family: Roboto;
 }
 
 .navbar{
-    background-color: rgb(156, 92, 63);
+    background-color: var(--cor1);
 }
 
-.nav .nav-link.active{
+#cabecalho .nav .nav-link.active{
     background-color: white;
     color: rgb(156, 92, 63);
 }
 
-.nav .nav-link,
+#cabecalho .nav .nav-link,
 .navbar-brand,
-.navbar-brand:hover{
+.navbar-brand:hover,
+.nav-produtos .nav-link.active:hover{
     color: white;
 }
 
@@ -30,9 +37,50 @@ body{
 }
 
 .section-title span{
-    color: rgb(156, 92, 63);
+    color: var(--cor1);
 }
 
-#sobre{
-    background-color: rgba(156, 93, 63, 0.192);
+#sobre,
+#produtos{
+    background-color: var(--cor2);
 }
+
+.text-colored{
+    color: var(--cor1);
+}
+
+.nav-produtos .nav-link.active,
+#fale-conosco button{
+    background-color: var(--cor1);
+    color: white;
+}
+
+.nav-produtos .nav-link:hover {
+    color: var(--cor1);
+}
+
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+
+.social-links a{
+    text-decoration: none;
+    color: black;
+}
+
+.social-links:hover {
+    color: var(--cor1);
+}
+
+
+@media (max-width: 767px) {
+    .carousel-item img{
+        height: 280px;
+    }
+}
+
+footer{
+    background-color: var(--cor2);
+}
+

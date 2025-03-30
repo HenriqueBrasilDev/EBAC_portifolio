@@ -20,9 +20,9 @@
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg stick-top p-4" id="cabecalho">
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
         <div class="container">
-            <h1 class="navbar-brand m-0">Nome</h1>
+            <h1 class="navbar-brand m-0 fs-3">Solange Brasil</h1>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,19 +35,19 @@
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="" class="nav-link ">
+                        <a href="#eventos" class="nav-link ">
                             <i class="bi bi-calendar-check me-1"></i>
                             Eventos
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="" class="nav-link ">
+                        <a href="#produtos" class="nav-link ">
                             <i class="bi bi-card-text me-1"></i>
-                            Cardapio
+                            Produtos
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="" class="nav-link ">
+                        <a href="#fale-conosco" class="nav-link ">
                             <i class="bi bi-chat-left-text me-1"></i>
                             Fale conosco
                         </a>
@@ -57,18 +57,18 @@
         </div>
     </header>
 
-    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
         <section id="sobre">
             <div class="carousel slide" data-bs-ride="carousel" id="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="3000">
-                        <img src="./img/slide1.jpg" alt="">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="./img/slide1.png" alt="">
                     </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <img src="./img/slide2.jpg" alt="">
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./img/slide2.png" alt="">
                     </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <img src="./img/slide3.jpg" alt="">
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./img/slide3.png" alt="">
                     </div>
                 </div>
     
@@ -90,10 +90,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5">
-                            <img src="img/slide1.jpg" class="d-block w-100 rounded" alt="">
+                            <img src="img/imagem_beleza_10-dicas-administrar-salao-beleza-sucesso_shutterstock_1715459824.jpg" class="d-block w-100 rounded" alt="">
                         </div>
-                        <div class="col-md-7">
-                            <h2 class="section-title">Sobre a <span>loja</span></h2>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">mim</span></h2>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium eum ipsam ipsa voluptatibus, temporibus laborum accusantium eligendi possimus voluptatum a cupiditate blanditiis consequuntur earum porro in illo corrupti doloribus libero!</p>
                             <h3 class="section-title">Sobre o <span>local</span></h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, odit! Ratione similique exercitationem facilis neque eum quam libero architecto dicta accusantium, aut fugit odio placeat iusto veritatis ad nam provident.</p>
@@ -107,6 +107,198 @@
                 </div>
             </div>
         </section>
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center"> Para todas as <span class="text-colored">ocasiões</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="./img/eventos/aniversarios.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">Aniversários</h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi porro et, veniam, voluptas corporis maiores, aliquam aperiam non nobis est nesciunt cum. Maiores quidem sapiente aliquid deleniti, aliquam repellat similique!
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./img/eventos/casamento4.png" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">Casamentos</h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi porro et, veniam, voluptas corporis maiores, aliquam aperiam non nobis est nesciunt cum. Maiores quidem sapiente aliquid deleniti, aliquam repellat similique!
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./img/eventos/debutante.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">Debutantes</h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi porro et, veniam, voluptas corporis maiores, aliquam aperiam non nobis est nesciunt cum. Maiores quidem sapiente aliquid deleniti, aliquam repellat similique!
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+        <section id="produtos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Nosso <span class="text-colored">produtos</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-produtos">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#cuidados-basicos" class="fw-bold text-start nav-link active text-colored">Cuidados básicos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#lavagem-capilar" class="fw-bold text-start nav-link text-colored">Lavagem capilar</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#acessórios" class="fw-bold text-start nav-link text-colored">Acessórios</button>
+
+
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="cuidados-basicos">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="img/produtos/Loading_icon.gif" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="img/produtos/Loading_icon.gif" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Suco de Laranja</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="img/produtos/Loading_icon.gif" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="img/produtos/Loading_icon.gif" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="img/produtos/Loading_icon.gif" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Suco de Laranja</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="img/produtos/Loading_icon.gif" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="lavagem-capilar">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="img/images/produtos/bebidas/cerveja.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="img/images/produtos/bebidas/vinho.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Suco de Laranja</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="acessórios">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="img/images/produtos/entradas/entrada.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="img/images/produtos/entradas/entrada.jpg" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Suco de Laranja</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">Conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3 text-colored">
+                                <label for="none" class="form-label fw-bold">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3 text-colored">
+                                <label for="email" class="form-label fw-bold">Seu e-mail</label>
+                                <input type="email" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3 text-colored">
+                                <label for="telefone" class="form-label fw-bold">Seu telefone (opcional)</label>
+                                <input type="tel" id="nome" class="form-control">
+                            </div>
+                            <div class="mb-3 text-colored" >    
+                                <label for="mensagem" class="form-label fw-bold">Sua mensagem</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links mb-5">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <h3 class="section-title text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p class="fw-bold">Rua Antonio Polimeni, 32 - Suzano, Sp.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="pt-3 pb-3">
+            <div class="container text-center">
+                <a class="text-decoration-none fw-bold text-colored" href="https://henriquebrazil.com/" target="_blank">
+                    Henrique Brasil © 2025
+                </a>
+            </div>
+
+
+            
+
+        </footer>
     </div>
 
 
